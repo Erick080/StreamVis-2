@@ -8,7 +8,7 @@ def wordcloud_page():
         st.warning('No data uploaded, please upload some data before checking this page')
         return
     
-    file_name = st.selectbox('Uploaded archieves', st.session_state.analyzed_csv_files.keys())
+    file_name = st.selectbox('Uploaded archives', st.session_state.analyzed_csv_files.keys())
 
     classification_col = ['Desempate']
 

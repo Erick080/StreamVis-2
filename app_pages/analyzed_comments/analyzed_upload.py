@@ -20,7 +20,7 @@ def analyzed_upload():
                 print(e)
 
     #Upload
-    analyzed_files = st.file_uploader('Dump analyzed csv files here', type=['csv', 'json'], accept_multiple_files =True)
+    analyzed_files = st.file_uploader('Dump analyzed csv or json files here', type=['csv', 'json'], accept_multiple_files =True)
     if analyzed_files:
         for file in analyzed_files:
             try:
@@ -47,4 +47,4 @@ def analyzed_upload():
             del st.session_state.analyzed_csv_files[file_name]
     
     else:
-        st.info('No csv archieve')
+        st.info('No csv archive')
